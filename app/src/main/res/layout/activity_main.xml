@@ -82,7 +82,28 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="1dp"
+        android:layout_marginBottom="16dp"
+
         android:text="In Minutes"
+        android:textColor="#264653"
+        android:textSize="24sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tvAgeInHours"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="....."
+        android:textColor="#264653"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:text="In Hours"
         android:textColor="#264653"
         android:textSize="24sp"
         android:textStyle="bold"/>
