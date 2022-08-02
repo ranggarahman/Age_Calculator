@@ -11,7 +11,11 @@ import java.text.SimpleDateFormat
 import java.util.*
 
 class MainActivity : AppCompatActivity() {
+    /**
 
+    green comment
+
+     */
     private var tvSelectedDate : TextView? = null
     private var tvAgeInMinutes : TextView? = null
     private var tvAgeInHours : TextView? = null
@@ -57,8 +61,8 @@ class MainActivity : AppCompatActivity() {
 
                             val differenceInMinutes = currentDateInMinutes - selectedDateInMinutes
 
-                            tvAgeInMinutes?.text  = differenceInMinutes.toString()
-                            tvAgeInHours?.text = (differenceInMinutes/60).toString()
+                            tvAgeInMinutes?.text  = String.format(Locale.US,"%,d", differenceInMinutes)
+                            tvAgeInHours?.text = String.format(Locale.US,"%,d", (differenceInMinutes/60))
                         }
 
                     }
